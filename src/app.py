@@ -15,20 +15,25 @@ import plotly.graph_objects as go
 app = Dash(__name__)
 server = app.server
 
+url1 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/FracTrackerNationalWells_Part1.csv'
 file_path1 = 'C:/Users/melli/Desktop/deploywithrender/src/FracTrackerNationalWells_Part1.csv'
 data1 = pd.read_csv(file_path1, encoding='cp1252')
 
+url2 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/FracTrackerNationalWells_Part2.csv'
 file_path2 = 'C:/Users/melli/Desktop/deploywithrender/src/FracTrackerNationalWells_Part2.csv'
 data2 = pd.read_csv(file_path2, encoding='cp1252')
 
+url3 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/FracTrackerNationalWells_Part3-TX.csv'
 file_path3 = 'C:/Users/melli/Desktop/deploywithrender/src/FracTrackerNationalWells_Part3_TX.csv'
 data3 = pd.read_csv(file_path3, encoding='cp1252')
 
+url4 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/2023earthquakesupto10-14.csv'
 file_path4 = 'C:/Users/melli/Desktop/deploywithrender/src/2023earthquakesupto10-14.csv'
-earthquake_data = pd.read_csv(file_path4, encoding='cp1252')
+earthquake_data = pd.read_csv(url4, encoding='cp1252')
 
 fracking_data = pd.concat([data1, data2, data3], ignore_index=True)
 
+url5 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/earthquake_with_distance.csv'
 file_path4 = 'C:/Users/melli/Desktop/deploywithrender/src/earthquake_with_distance.csv'
 earthquake_with_distance = pd.read_csv(file_path4, encoding='cp1252')
 
