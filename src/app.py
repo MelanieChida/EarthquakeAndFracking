@@ -44,7 +44,7 @@ us_bounding_box = [[24.396308, -125.000000], [49.384358, -66.934570]]
 # Function to create the Folium map
 def create_folium_map(earthquake_data):
     # Create a map centered around the United States
-    us_map = folium.Map(location=[28.8283, -98.5795], zoom_start=5, control_scale=True, max_bounds=True, max_bounds_viscosity=1.0)
+    us_map = folium.Map(location=[32.8283, -98.5795], zoom_start=5, control_scale=True, max_bounds=True, max_bounds_viscosity=1.0)
 
     # Create a GeoJSON layer for the United States boundary
     us_geojson_url = 'https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json'
