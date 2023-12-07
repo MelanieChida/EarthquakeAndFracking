@@ -12,8 +12,6 @@ import requests
 import plotly.express as px
 import plotly.graph_objects as go
 
-app = Dash(__name__)
-server = app.server
 
 url1 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/FracTrackerNationalWells_Part1.csv'
 file_path1 = 'C:/Users/melli/Desktop/deploywithrender/src/FracTrackerNationalWells_Part1.csv'
@@ -108,7 +106,8 @@ for state in earthquake_data['state'].unique():
     scatter_plots[state] = scatter_fig
 
 # Initialize Dash app
-app = dash.Dash(__name__)
+app = Dash(__name__)
+server = app.server
 
 # Define layout
 app.layout = html.Div(style={'textAlign': 'center'}, children=[
