@@ -23,7 +23,7 @@ url2 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/ma
 file_path2 = 'C:/Users/melli/Desktop/deploywithrender/src/FracTrackerNationalWells_Part2.csv'
 data2 = pd.read_csv(url2, encoding='cp1252')
 
-url3 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/FracTrackerNationalWells_Part3-TX.csv'
+url3 = 'https://raw.githubusercontent.com/MelanieChida/EarthquakesAndFracking/main/src/FracTrackerNationalWells_Part3_TX.csv'
 file_path3 = 'C:/Users/melli/Desktop/deploywithrender/src/FracTrackerNationalWells_Part3_TX.csv'
 data3 = pd.read_csv(url3, encoding='cp1252')
 
